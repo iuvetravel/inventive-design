@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans+Condensed:wght@300;700&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+
+:root {
+  --gray: #92989c;
+  --light: #eaebec;
+  --yellow: #eab10c;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s linear;
+  text-transform: capitalize;
+  font-family: "Titillium Web", "Open Sans Condensed", "Montserrat", "Krona One",
+    sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--light);
+  z-index: 100;
+  padding: 1rem 2rem;
+  box-shadow: rgba(234, 177, 12, 0.25) 0px 13px 27px -5px,
+    rgba(119, 92, 13, 0.3) 0px 8px 16px -8px;
+}
+.header .logo img {
+  height: 100%;
+}
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  margin: 0 1.5rem;
+}
+
+.header nav ul li a {
+  font-family: "Open Sans Condensed";
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gray);
+}
+
+.header nav ul li a:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.header .fa-bars {
+  font-size: 6.5rem;
+  color: var(--gray);
+  cursor: pointer;
+  display: none;
+}
+
+.fa-times {
+  transform: rotate(360deg);
+}
+
+.home .hero {
+  min-height: 70vh;
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  display: flex;
+}
+
+.home .hero .text1 {
+  margin-top: 30rem;
+  font-size: 10rem;
+  width: 85rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: var(--light);
+  opacity: 0.5;
+}
+
+.home .hero .text2 {
+  font-size: 5rem;
+  width: 65rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: var(--yellow);
+  margin-left: 49rem;
+  margin-top: 1rem;
+  opacity: 0.6;
+}
+/* ======================================================
+======================================================
+====================================================== */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header .logo img {
+    width: 50%;
+  }
+
+  .header .fa-bars {
+    display: block;
+  }
+  .header nav {
+    position: fixed;
+    top: 10rem;
+    right: -120%;
+    height: calc(100vh - 10rem);
+    width: 100vw;
+    background: var(--gray);
+    z-index: 1000;
+    border-top: 0.3rem solid black;
+  }
+  .header nav ul {
+    height: 100%;
+    width: 43rem;
+    background: var(--light);
+    flex-flow: column;
+    justify-content: center;
+    float: right;
+  }
+  .header nav ul li {
+    margin: 1rem 0;
+  }
+  .header nav ul li a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 4rem;
+    width: 35rem;
+    border-radius: 5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .header nav ul li a:hover {
+    background: var(--yellow);
+    color: var(--light);
+  }
+
+  .header nav ul li a:active {
+    transform: translateY(10px);
+  }
+  .header .nav-toggle {
+    right: 0;
+  }
+  .home .hero .text2 {
+    font-size: 5rem;
+    width: 65rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    background: var(--yellow);
+    margin-left: 25rem;
+    margin-top: 1rem;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 400px) {
+  .home .hero {
+    background: url(../img/background1.jpg) no-repeat;
+    background-size: cover;
+  }
+  .header .logo img {
+    width: 70%;
+  }
+  .header nav {
+    position: fixed;
+    top: 8rem;
+    right: -120%;
+    height: calc(100vh - 8rem);
+    width: 100vw;
+  }
+}
