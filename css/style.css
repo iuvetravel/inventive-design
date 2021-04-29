@@ -184,10 +184,10 @@ body {
   }
   .header nav {
     position: fixed;
-    top: 8rem;
-    right: -120%;
-    height: calc(100vh - 8rem);
-    width: 100vw;
+    top: 8.5rem;
+    right: -130%;
+    height: calc(100vh - 8.5rem);
+    width: 130vw;
   }
   .home .hero .text1 {
     margin-top: 35rem;
@@ -208,5 +208,8 @@ body {
     margin-left: 19rem;
     margin-top: 1rem;
     opacity: 0.6;
+  }
+  .header .fa-bars {
+    margin-right: 20px;
   }
 }
