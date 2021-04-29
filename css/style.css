@@ -176,8 +176,11 @@ body {
 
 @media (max-width: 400px) {
   .home .hero {
-    background: url(../img/00.jpg) no-repeat;
+    background: url(../img/00.webp);
     background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
   }
   .header .logo img {
     width: 70%;
