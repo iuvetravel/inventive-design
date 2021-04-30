@@ -38,7 +38,7 @@ body {
     rgba(119, 92, 13, 0.3) 0px 8px 16px -8px;
 }
 .header .logo img {
-  height: 100% !important;
+  height: 100%;
 }
 .header nav ul {
   list-style-type: none;
@@ -431,7 +431,7 @@ textarea {
     display: flex;
   }
   .header .logo img {
-    width: 70%;
+    width: 60%;
   }
   .header nav {
     position: fixed;
