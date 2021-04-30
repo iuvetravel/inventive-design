@@ -267,7 +267,9 @@ body {
     align-items: center;
     display: flex;
   }
-
+  .header .logo img {
+    width: 70%;
+  }
   .header nav {
     position: fixed;
     top: 8.5rem;
