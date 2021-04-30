@@ -266,6 +266,99 @@ h1 {
   transform: scale(1.2);
 }
 
+.contact {
+  min-height: 100vh;
+}
+
+.contact-box-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-box-container .contact-box {
+  height: 35rem;
+  flex: 1 0 30rem;
+  margin: 2rem;
+  box-shadow: rgb(197, 157, 36) 0px 20px 30px -10px;
+  border-radius: 2rem;
+  text-align: center;
+  padding-top: 4rem;
+  background: url(../img/00.png) no-repeat;
+  background-position: center;
+}
+.contact-box-container .contact-box i {
+  color: #ffcc00;
+  font-size: 7rem;
+}
+
+.contact-box-container .contact-box h3 {
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: none;
+  margin: 2rem 0;
+}
+
+.contact .form-container {
+  width: 95%;
+  box-shadow: rgb(197, 157, 36) 0px 20px 30px -10px;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  margin: 3rem 0;
+}
+.contact .form-container form input,
+textarea {
+  height: 4.5rem;
+  padding: 0 1rem;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(234, 177, 12, 0.25) 0px 30px 60px -12px inset,
+    rgba(234, 177, 12, 0.3) 0px 18px 36px -18px inset;
+}
+.contact .form-container form .inputBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .form-container .yname,
+.ymail {
+  width: 100%;
+}
+
+.contact .form-container .ymail {
+  width: 100%;
+}
+.contact .form-container form input [type="email"] {
+  width: 95%;
+}
+.contact .form-container form textarea {
+  width: 100%;
+  height: 40rem;
+  padding: 2rem;
+  resize: none;
+  overflow-y: auto;
+}
+.contact .form-container .btn {
+  background: #ffcc00;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #92989c;
+  padding: 0 5rem;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.contact .form-container .btn:hover {
+  background: var(--yellow);
+  color: var(--light);
+}
+.contact .form-container .btn:active {
+  transform: translateY(10px);
+}
 /* =========================================== */
 
 @media (max-width: 768px) {
@@ -402,6 +495,9 @@ h1 {
   }
 
   .projects {
+    padding-top: 3rem;
+  }
+  .contact {
     padding-top: 3rem;
   }
 }
