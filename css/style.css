@@ -431,7 +431,7 @@ textarea {
     display: flex;
   }
   .header .logo img {
-    width: 80%;
+    width: 60%;
   }
   .header nav {
     position: fixed;
