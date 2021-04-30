@@ -397,11 +397,11 @@ h1 {
     font-weight: 500;
     margin: 0 0.5rem;
   }
-  .services .heading {
-    margin: 8rem 0;
+  .services {
+    padding-top: 3rem;
   }
 
-  .projects .heading {
-    margin: 8rem 0;
+  .projects {
+    padding-top: 3rem;
   }
 }
