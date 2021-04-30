@@ -176,7 +176,7 @@ body {
   margin-right: 1rem;
   text-decoration: none;
   color: #ffcc00;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgb(179, 142, 31) 0px 20px 30px -10px;
 }
 .about .info .icons a:hover {
   background: #eab10c;
@@ -187,13 +187,83 @@ body {
   font-size: 8rem;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 1.7rem;
+  letter-spacing: 2.7rem;
   color: #92989c;
   margin: 2rem 0;
   padding-top: 6rem;
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #eab10c;
+}
+
+h1 {
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.services {
+  min-height: 100vh;
+}
+
+.services .box-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.services .box-container .box {
+  height: 52rem;
+  width: 52rem;
+  box-shadow: rgb(179, 142, 31) 0px 20px 30px -10px;
+  border-left: 0.5rem solid var(--yellow);
+  border-right: 0.5rem solid var(--yellow);
+  border-radius: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+  margin: 2rem 3rem;
+}
+.services .box-container .box .fas {
+  color: var(--gray);
+  font-size: 10rem;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.services .box-container .box p {
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 2rem 0;
+  color: #92989c;
+  text-transform: none;
+  margin: 2rem 1.5rem;
+  object-fit: cover;
+}
+
+.projects {
+  min-height: 100vh;
+}
+.projects .heading {
+  background: #eab10c;
+  padding-bottom: 5rem;
+}
+
+.projects .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects .box-container .box {
+  height: 50rem;
+  width: 80rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: rgb(179, 142, 31) 0px 20px 30px -10px;
+}
+
+.projects .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.projects .box-container .box img:hover {
+  transform: scale(1.2);
 }
 
 /* =========================================== */
@@ -259,11 +329,7 @@ body {
   }
 }
 
-@media (max-width: 400px) {
-  .pl-5,
-  .px-5 {
-    padding-left: 3rem !important;
-  }
+@media (max-width: 475px) {
   .home .hero {
     min-height: 70vh;
     background: url(../img/00.jpg) no-repeat;
@@ -325,5 +391,10 @@ body {
   }
   .about .info .icons {
     text-align: center;
+  }
+  .services .box-container .box p {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0 0.5rem;
   }
 }
