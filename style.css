@@ -329,7 +329,7 @@ h1 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 505px) {
   .pl-5,
   .px-5 {
     padding-left: 3rem !important;
