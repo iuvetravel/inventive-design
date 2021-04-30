@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
   text-transform: capitalize;
   font-family: "Titillium Web", "Open Sans Condensed", "Montserrat", "Krona One",
     sans-serif;
@@ -19,7 +19,7 @@
 
 html {
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -203,10 +203,6 @@ body {
     font-size: 50%;
   }
 
-  .header .logo img {
-    width: 90%;
-  }
-
   .header .fa-bars {
     display: block;
   }
@@ -271,9 +267,7 @@ body {
     align-items: center;
     display: flex;
   }
-  .header .logo img {
-    width: 70%;
-  }
+
   .header nav {
     position: fixed;
     top: 8.5rem;
