@@ -26,6 +26,15 @@ body {
   overflow-x: hidden;
 }
 
+.pl-5,
+.px-5 {
+  padding-left: 3rem !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -201,6 +210,11 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 50%;
+  }
+
+  .pl-5,
+  .px-5 {
+    padding-left: 3rem !important;
   }
 
   .header .fa-bars {
