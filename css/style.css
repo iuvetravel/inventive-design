@@ -261,7 +261,8 @@ body {
 
 @media (max-width: 400px) {
   .home .hero {
-    background: url(../img/00.jpg);
+    min-height: 70vh;
+    background: url(../img/home.01.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
