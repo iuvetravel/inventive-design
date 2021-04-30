@@ -237,8 +237,7 @@ h1 {
   min-height: 100vh;
 }
 .projects .heading {
-  background: #eab10c;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .projects .box-container {
@@ -248,8 +247,8 @@ h1 {
 }
 
 .projects .box-container .box {
-  height: 50rem;
-  width: 80rem;
+  height: 30rem;
+  width: 50rem;
   margin: 2rem;
   border-radius: 2rem;
   box-shadow: rgb(179, 142, 31) 0px 20px 30px -10px;
