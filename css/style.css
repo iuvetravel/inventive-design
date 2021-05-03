@@ -45,6 +45,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: static;
   margin: 0;
   padding: 0;
 }
@@ -58,6 +59,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   color: var(--gray);
+  text-decoration: none;
 }
 
 .header nav ul li a:hover {
@@ -66,7 +68,7 @@ body {
 }
 
 .header .fa-bars {
-  font-size: 6.5rem;
+  font-size: 6rem;
   color: var(--gray);
   cursor: pointer;
   display: none;
@@ -425,7 +427,7 @@ textarea {
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
   .home .hero {
     min-height: 70vh;
     background: url(../img/00.jpg) no-repeat;
@@ -435,7 +437,7 @@ textarea {
     display: flex;
   }
   .header .logo img {
-    width: 60%;
+    width: 70%;
   }
   .header nav {
     position: fixed;
@@ -502,6 +504,13 @@ textarea {
   }
   .contact {
     padding-top: 3rem;
+  }
+  .p-0 {
+    padding: 0 !important;
+  }
+  .pl-5,
+  .px-5 {
+    padding-left: 0;
   }
 }
 
