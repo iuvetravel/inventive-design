@@ -144,7 +144,7 @@ body {
 }
 
 .about .image img {
-  width: 95%;
+  width: 400px;
   object-fit: cover;
   box-shadow: rgb(179, 142, 31) 0px 20px 30px -10px;
 }
