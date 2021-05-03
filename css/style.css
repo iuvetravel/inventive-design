@@ -144,7 +144,7 @@ body {
 }
 
 .about .image img {
-  width: 400px;
+  width: 100%;
   object-fit: cover;
   box-shadow: rgb(179, 142, 31) 0px 20px 30px -10px;
 }
@@ -512,6 +512,10 @@ textarea {
   .pl-5,
   .px-5 {
     padding-left: 0;
+  }
+  .about .image img {
+    width: 100%;
+    vertical-align: middle;
   }
 }
 
