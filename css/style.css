@@ -438,6 +438,8 @@ textarea {
   }
   .header .logo img {
     width: 70%;
+    margin: 0;
+    padding: 0;
   }
   .header nav {
     position: fixed;
